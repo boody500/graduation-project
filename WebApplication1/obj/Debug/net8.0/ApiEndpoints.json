@@ -8,7 +8,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "videoUrl",
+        "Name": "videoID",
         "Type": "System.String",
         "IsRequired": false
       }

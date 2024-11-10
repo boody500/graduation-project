@@ -34,9 +34,9 @@
               "Title": "YouTubeTranscriptService.cs",
               "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Services\\YouTubeTranscriptService.cs",
               "RelativeDocumentMoniker": "Services\\YouTubeTranscriptService.cs",
-              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Services\\YouTubeTranscriptService.cs*",
-              "RelativeToolTip": "Services\\YouTubeTranscriptService.cs*",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwFkAAAAkAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Services\\YouTubeTranscriptService.cs",
+              "RelativeToolTip": "Services\\YouTubeTranscriptService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T16:30:13.821Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAiwDMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T03:02:31.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T03:02:31.671Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-29T02:39:51.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T02:39:51.328Z"
             },
             {
               "$type": "Document",
@@ -75,7 +73,7 @@
               "RelativeDocumentMoniker": "Controllers\\YoutubeController .cs",
               "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Controllers\\YoutubeController .cs",
               "RelativeToolTip": "Controllers\\YoutubeController .cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAcwFYAAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAQwHAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T02:08:29.351Z",
               "EditorCaption": ""

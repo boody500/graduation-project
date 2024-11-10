@@ -84,7 +84,9 @@ namespace WebApplication1.Controllers
                     var videoinfo = new
                     {
                         Title = searchResult.Snippet.Title,
-                        Url = $"https://www.youtube.com/watch?v={searchResult.Id.VideoId}"
+                        VID = searchResult.Id.VideoId,
+                        Url = $"https://www.youtube.com/watch?v={searchResult.Id.VideoId}",
+                        Thumbnail = searchResult.Snippet.Thumbnails.Default__.Url
                     };
 
                     videos.Add(videoinfo);
@@ -93,54 +95,10 @@ namespace WebApplication1.Controllers
                 }
             }
 
-            return Ok(new { items = videos });
+            return Ok(  videos );
         }
 
-        /*[HttpGet("getTranscript")]
-        public async Task<IActionResult> getTranscript(string vid)
-            
-
-           
-
-            try
-            {
-                // Get the list of captions for the video
-                List<string> s = new List<string> {"snippet","id"};
-                var captionsRequest = _youtubeService.Captions.List(s ,vid);
-                var captionsResponse = await captionsRequest.ExecuteAsync();
-
-                var captionId = captionsResponse.Items.FirstOrDefault()?.Id;
-                if (captionId == null)
-                {
-                    Console.WriteLine($"No captions available for video ID: {vid}");
-                    return null; // No transcript found
-                }
-
-                // Download the captions
-                var captionRequest = _youtubeService.Captions.Download(captionId);
-                var transcriptResponse = await captionRequest.ExecuteAsync();
-
-                // Parse the transcript response (modify according to actual response format)
-                //var transcriptEntries = ParseTranscript(transcriptResponse);
-                return Content(transcriptResponse);
-            }
-            catch (Google.GoogleApiException ex)
-            {
-                if (ex.HttpStatusCode == System.Net.HttpStatusCode.Forbidden)
-                {
-                    Console.WriteLine($"Subtitles are disabled for video ID: {vid}");
-                }
-                else
-                {
-                    Console.WriteLine($"An error occurred: {ex.Message}");
-                }
-                return null;
-            }
-        }
-
-        
-    }*/
-
+       
 
 
         private readonly YouTubeTranscriptService _transcriptService;
@@ -151,14 +109,14 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet("GetTranscript")]
-        public async Task<IActionResult> GetTranscript(string videoUrl)
+        public async Task<IActionResult> GetTranscript(string videoID)
         {
-            if (string.IsNullOrWhiteSpace(videoUrl))
+            if (string.IsNullOrWhiteSpace(videoID))
             {
-                return BadRequest("A YouTube video URL must be provided.");
+                return BadRequest("A YouTube video ID must be provided.");
             }
 
-            var transcript = await _transcriptService.GetTranscriptAsync(videoUrl);
+            var transcript = await _transcriptService.GetTranscriptAsync(videoID);
             return Ok(transcript);
         }
 

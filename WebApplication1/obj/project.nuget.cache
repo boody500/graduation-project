@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "INPK+C2Z60c=",
+  "dgSpecHash": "hMu8XKid6os=",
   "success": true,
   "projectFilePath": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\Abdelrahman Elsayed_\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
     "C:\\Users\\Abdelrahman Elsayed_\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
     "C:\\Users\\Abdelrahman Elsayed_\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\Abdelrahman Elsayed_\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Abdelrahman Elsayed_\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\Abdelrahman Elsayed_\\.nuget\\packages\\system.management\\7.0.2\\system.management.7.0.2.nupkg.sha512",
     "C:\\Users\\Abdelrahman Elsayed_\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
