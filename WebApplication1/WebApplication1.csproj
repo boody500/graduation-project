@@ -10,9 +10,14 @@
     <PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
     <PackageReference Include="Google.Apis.YouTube.v3" Version="1.68.0.3582" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.10" />
+    <PackageReference Include="MongoDB.Driver" Version="3.1.0" />
+    <PackageReference Include="MongoFramework" Version="0.29.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
     <PackageReference Include="System.IO" Version="4.3.0" />
-    <PackageReference Include="YoutubeExplode" Version="6.4.3" />
+    <PackageReference Include="YoutubeExplode" Version="6.5.1" />
+    <PackageReference Include="YoutubeExplode.Converter" Version="6.5.1" />
+    <PackageReference Include="YoutubeExtractorCore" Version="0.2.0" />
   </ItemGroup>
 
 </Project>

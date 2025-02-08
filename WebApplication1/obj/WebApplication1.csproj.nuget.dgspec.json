@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -62,9 +63,21 @@
               "target": "Package",
               "version": "[8.0.10, )"
             },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "MongoFramework": {
+              "target": "Package",
+              "version": "[0.29.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             },
             "System.IO": {
               "target": "Package",
@@ -72,7 +85,15 @@
             },
             "YoutubeExplode": {
               "target": "Package",
-              "version": "[6.4.3, )"
+              "version": "[6.5.1, )"
+            },
+            "YoutubeExplode.Converter": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "YoutubeExtractorCore": {
+              "target": "Package",
+              "version": "[0.2.0, )"
             }
           },
           "imports": [
@@ -94,7 +115,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

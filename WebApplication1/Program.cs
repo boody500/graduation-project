@@ -1,6 +1,10 @@
 
+
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
+using WebApplication1.Data;
+using WebApplication1.Repositories;
+using WebApplication1.Services;
 namespace WebApplication1
 {
     public class Program
@@ -10,9 +14,16 @@ namespace WebApplication1
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            // Register MongoDbContext with configuration
+            builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDbSettings"));
+            builder.Services.AddSingleton<MongoDbContext>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IUserService, UserService>();
+            //builder.Services.AddScoped<IYoutubeRepository, YoutubeRepository>();
+            //builder.Services.AddScoped<IYoutubeService, YouTubeService>();
 
             builder.Services.AddControllers();
-            builder.Services.AddScoped<YouTubeTranscriptService>();
+            //builder.Services.AddScoped<YouTubeTranscriptService>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -47,8 +58,8 @@ namespace WebApplication1
             app.UseAuthentication(); // Add authentication middleware
             
 
+            app.UseRouting();
             app.MapControllers();
-
             app.Run();
         }
     }

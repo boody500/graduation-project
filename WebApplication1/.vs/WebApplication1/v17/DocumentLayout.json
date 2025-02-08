@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\services\\youtubetranscriptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:services\\youtubetranscriptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\controllers\\youtubecontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:controllers\\youtubecontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\repositories\\youtuberepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:repositories\\youtuberepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\models\\video.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:models\\video.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|c:\\users\\abdelrahman elsayed_\\documents\\.net\\projects\\webapplication1\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089B4874-2164-4150-8C92-7D87B38822B4}|WebApplication1.csproj|solutionrelative:repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "YouTubeTranscriptService.cs",
-              "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Services\\YouTubeTranscriptService.cs",
-              "RelativeDocumentMoniker": "Services\\YouTubeTranscriptService.cs",
-              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Services\\YouTubeTranscriptService.cs*",
-              "RelativeToolTip": "Services\\YouTubeTranscriptService.cs*",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwFkAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T16:30:13.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAiwDMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T03:02:31.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-29T02:39:51.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "YoutubeController .cs",
               "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Controllers\\YoutubeController .cs",
               "RelativeDocumentMoniker": "Controllers\\YoutubeController .cs",
               "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Controllers\\YoutubeController .cs",
               "RelativeToolTip": "Controllers\\YoutubeController .cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAcwFYAAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAawGwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T02:08:29.351Z",
+              "WhenOpened": "2025-02-07T02:52:53.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "YoutubeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Repositories\\YoutubeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\YoutubeRepository.cs",
+              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Repositories\\YoutubeRepository.cs",
+              "RelativeToolTip": "Repositories\\YoutubeRepository.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAhwFcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T02:52:53.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T02:09:52.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T02:07:43.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Services\\IUserService.cs",
+              "RelativeToolTip": "Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T02:07:19.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T01:11:29.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T02:05:17.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Video.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Models\\Video.cs",
+              "RelativeDocumentMoniker": "Models\\Video.cs",
+              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Models\\Video.cs",
+              "RelativeToolTip": "Models\\Video.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T01:58:18.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Abdelrahman Elsayed_\\Documents\\.Net\\Projects\\WebApplication1\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T01:56:33.871Z",
               "EditorCaption": ""
             }
           ]

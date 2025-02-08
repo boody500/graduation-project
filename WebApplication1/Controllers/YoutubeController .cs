@@ -1,10 +1,7 @@
 ﻿using Google.Apis.Services;
 using Google.Apis.YouTube.v3;
 using Microsoft.AspNetCore.Mvc;
-using Google.Apis.YouTube.v3.Data;
-using Google.Apis.Auth.OAuth2;
-using Microsoft.AspNetCore.Authentication;
-using System.IO;
+
 
 namespace WebApplication1.Controllers
 {
@@ -13,35 +10,7 @@ namespace WebApplication1.Controllers
     public class YoutubeController : ControllerBase
     {
         private readonly string apiKey = "AIzaSyAWuPDQf91s8CGiw2jvs2ejfoPuUEMVMd0"; // Your API Key
-        //private readonly YouTubeService _youtubeService;
-
-
-
-        /*public YoutubeController()
-        {
-            // Path to the service account key file
-            var credentialFilePath = "C:/Users/Abdelrahman Elsayed_/Downloads/youtube-api-440104-26c2dce275ab.json";
-
-            GoogleCredential credential;
-            using (var stream = new FileStream(credentialFilePath, FileMode.Open, FileAccess.Read))
-            {
-                credential = GoogleCredential.FromStream(stream)
-                .CreateScoped(new[]
-                {
-                    YouTubeService.Scope.YoutubeReadonly,
-                    YouTubeService.Scope.YoutubeForceSsl
-                });
-            }
-
-
-
-            // Initialize the YouTube service
-            _youtubeService = new YouTubeService(new BaseClientService.Initializer
-            {
-                HttpClientInitializer = credential,
-                ApplicationName = this.GetType().ToString()
-            });
-        }*/
+       
 
 
 
@@ -58,7 +27,7 @@ namespace WebApplication1.Controllers
                 return BadRequest("maxResults cannot be empty or negative.");
             }
 
-            var youtubeService = new YouTubeService(new BaseClientService.Initializer()
+            var youtubeService = new Google.Apis.YouTube.v3.YouTubeService(new BaseClientService.Initializer()
             {
                 ApiKey = apiKey,
 
@@ -84,7 +53,9 @@ namespace WebApplication1.Controllers
                     var videoinfo = new
                     {
                         Title = searchResult.Snippet.Title,
-                        Url = $"https://www.youtube.com/watch?v={searchResult.Id.VideoId}"
+                        VID = searchResult.Id.VideoId,
+                        Url = $"https://www.youtube.com/watch?v={searchResult.Id.VideoId}",
+                        Thumbnail = searchResult.Snippet.Thumbnails.Default__.Url
                     };
 
                     videos.Add(videoinfo);
@@ -93,75 +64,49 @@ namespace WebApplication1.Controllers
                 }
             }
 
-            return Ok(new { items = videos });
+            return Ok(  videos );
         }
 
-        /*[HttpGet("getTranscript")]
-        public async Task<IActionResult> getTranscript(string vid)
-            
+       
 
-           
-
-            try
-            {
-                // Get the list of captions for the video
-                List<string> s = new List<string> {"snippet","id"};
-                var captionsRequest = _youtubeService.Captions.List(s ,vid);
-                var captionsResponse = await captionsRequest.ExecuteAsync();
-
-                var captionId = captionsResponse.Items.FirstOrDefault()?.Id;
-                if (captionId == null)
-                {
-                    Console.WriteLine($"No captions available for video ID: {vid}");
-                    return null; // No transcript found
-                }
-
-                // Download the captions
-                var captionRequest = _youtubeService.Captions.Download(captionId);
-                var transcriptResponse = await captionRequest.ExecuteAsync();
-
-                // Parse the transcript response (modify according to actual response format)
-                //var transcriptEntries = ParseTranscript(transcriptResponse);
-                return Content(transcriptResponse);
-            }
-            catch (Google.GoogleApiException ex)
-            {
-                if (ex.HttpStatusCode == System.Net.HttpStatusCode.Forbidden)
-                {
-                    Console.WriteLine($"Subtitles are disabled for video ID: {vid}");
-                }
-                else
-                {
-                    Console.WriteLine($"An error occurred: {ex.Message}");
-                }
-                return null;
-            }
-        }
 
         
-    }*/
+        private readonly YouTubeService _transcriptFetcher;
 
-
-
-        private readonly YouTubeTranscriptService _transcriptService;
-
-        public YoutubeController(YouTubeTranscriptService transcriptService)
+        public YoutubeController()
         {
-            _transcriptService = transcriptService;
+            string pythonScriptPath = @"C:\Users\Abdelrahman Elsayed_\Documents\.Net\Projects\WebApplication1\transcript.py"; // Adjust the path
+            _transcriptFetcher = new YouTubeService(pythonScriptPath);
         }
 
         [HttpGet("GetTranscript")]
-        public async Task<IActionResult> GetTranscript(string videoUrl)
+        public IActionResult GetTranscript(string videoID)
         {
-            if (string.IsNullOrWhiteSpace(videoUrl))
-            {
-                return BadRequest("A YouTube video URL must be provided.");
-            }
+            string transcript = _transcriptFetcher.GetTranscript(videoID);
 
-            var transcript = await _transcriptService.GetTranscriptAsync(videoUrl);
+            if (string.IsNullOrEmpty(transcript))
+            {
+                return NotFound(new { error = "cannot find a transcript for the given video" });
+            }
+            
             return Ok(transcript);
+
+           
         }
 
+       
+
+        [HttpGet("GetBestMatchedCaption")]
+        public IActionResult GetBestMatchedCaption(string videoID, string prompt)
+        {
+            string bestMatchedCaption = _transcriptFetcher.GetBestMatchedCaption(videoID, prompt);
+            if (string.IsNullOrEmpty(bestMatchedCaption))
+            {
+                return NotFound(new { error = "cannot find a caption for the given video" });
+            }
+
+            return Ok(bestMatchedCaption);
+        }
 
     }
 }
